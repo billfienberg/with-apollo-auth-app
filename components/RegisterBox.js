@@ -17,7 +17,7 @@ const CREATE_USER = gql`
   }
 `;
 
-const RegisterBox = ({ client }) => {
+const SignUpBox = ({ client }) => {
   let name, email, password;
 
   return (
@@ -89,4 +89,4 @@ const RegisterBox = ({ client }) => {
   );
 };
 
-export default withApollo(RegisterBox);
+export default withApollo(SignUpBox);
