@@ -12,7 +12,7 @@ const SIGN_IN = gql`
 `;
 
 // TODO: Find a better name for component.
-const SigninBox = ({ client }) => {
+const LogInBox = ({ client }) => {
   let email, password;
 
   return (
@@ -75,4 +75,4 @@ const SigninBox = ({ client }) => {
   );
 };
 
-export default withApollo(SigninBox);
+export default withApollo(LogInBox);
