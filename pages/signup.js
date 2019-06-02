@@ -4,7 +4,7 @@ import Link from "next/link";
 import redirect from "../lib/redirect";
 import checkLoggedIn from "../lib/checkLoggedIn";
 
-import RegisterBox from "../components/RegisterBox";
+import SignUpBox from "../components/SignUpBox";
 
 export default class SignUp extends React.Component {
   static async getInitialProps(context) {
@@ -22,8 +22,8 @@ export default class SignUp extends React.Component {
   render() {
     return (
       <React.Fragment>
-        {/* RegisterBox handles all register logic. */}
-        <RegisterBox />
+        {/* SignUpBox handles all register logic. */}
+        <SignUpBox />
         <hr />
         Already have an account?{" "}
         <Link prefetch href="/signin">
